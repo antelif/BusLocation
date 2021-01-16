@@ -1,0 +1,51 @@
+ΑΛΕΞΑΝΔΡΟΣ ΒΕΡΡΑΣ 			3150010,
+ΒΛΑΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ 		3150013,
+ΝΤΕΛΗΦΙΛΙΠΠΙΔΗ ΑΝΑΣΤΑΣΙΑ 	3150254
+
+Code Notes
+
+1)
+    Στον φάκελο assets υπάρχουν 3 txt αρχεία που περιέχουν IP διευθύνσεις.
+    IP.TXT:             Broker IPs
+    PublisherIP.TXT:    Publisher IPs
+    SubIP.txt:          Subscribers IPs - not used in Android, αφού έχουμε μέθοδο για να διαβάσουμε
+                        την IP της κάθε android συσκευής.
+    Επιπλέον τα αρχεία με τις πληροφορίες των γραμμών.
+    Δεν χρησιμοποιούνται από το android app, απλά βρίσκονται στον φάκελο για να είναι όλα συγκεντρωμένα.
+
+2)
+    Arguments - Brokers:
+    args[0]: Αριθμός των Brokers
+    args[1]: IP.txt
+    args[2]: Αριθμός σειράς που βρίσκεται η IP του Broker στο IP.txt
+    args[3]: Publisher.txt
+    αργσ[4]: Αριθμός των Publishers
+
+--------------------------------------------------------
+2
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\IP.txt
+2
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\PublisherIP.txt
+2
+--------------------------------------------------------
+
+
+
+3)
+    Arguments - Publishers
+    args[0]: busLines.txt
+    args[1]: busPositions.txt
+    args[2]: RouteCodes.txt
+    args[3]: PublisherIP.txt
+    args[4]: Αριθμός Publishers
+    αργσ[5]: Αριθμός σιεράς που βρίσκεται η IP του Publisher
+
+--------------------------------------------------------
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\busLines.txt
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\busPositions.txt
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\RouteCodes.txt
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\PublisherIP.txt
+C:\Users\HP\Desktop\DS_22_05_19\app\src\main\assets\IP.txt
+2
+2
+--------------------------------------------------------

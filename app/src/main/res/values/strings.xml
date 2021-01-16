@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DS_22_05_19</string>
+    <string name="title_activity_maps">DS 2018-2019</string>
+    <string name="enter_line">Enter line&#8230;</string>
+    <string name="find">FIND</string>
+    <string name="cancel">Cancel</string>
+</resources>

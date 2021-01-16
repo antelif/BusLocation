@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    map:mapType="normal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        tools:context=".MapsActivity"
+        tools:layout="@layout/activity_maps"/>
+
+    <EditText
+        android:id="@+id/busLineET"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/enter_line"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/findBusLineBtn"
+        android:layout_width="121dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/busLineET"
+        android:layout_toRightOf="@+id/busLineET"
+        android:text="@string/find" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="114dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/findBusLineBtn"
+        android:layout_toRightOf="@+id/findBusLineBtn"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
